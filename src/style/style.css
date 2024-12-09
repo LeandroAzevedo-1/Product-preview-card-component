@@ -1,0 +1,80 @@
+:root {
+    --Family-Montserrat: "Montserrat", sans-serif;
+    --Family-Fraunces: "Fraunces", serif;
+}
+main {
+    background-color: #F3EBE4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    width: 590px;
+    display: flex;
+}
+.container .image {
+    background: url("../images/image-product-desktop.jpg") no-repeat center center;
+    background-size: cover;
+    min-width: 50%;
+    min-height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.container .content {
+    padding: 30px;
+    border-radius: 0 20px 20px 0;
+    background-color: #fff;
+}
+.content .product {
+    font-family: var(--Family-Montserrat);
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: #6c7289;
+    font-weight: 700;
+}
+.content .name{
+    font-family: var(--Family-Fraunces);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.content .product-descriptions{
+    line-height: 25px;
+    color: #6c7289;
+    margin-bottom: 10px;
+    font-family: var(--Family-Fraunces);
+    font-size: 14px;
+}
+.content .price {
+    display: flex;
+    margin: 25px 0;
+    align-items: center;
+    gap: 15px;
+}
+.content .price .price-discount{
+    font-family: var(--Family-Fraunces);
+    font-size: 2rem;
+    color: #146447;
+    font-weight: 700;
+}
+.content .price .value {
+    text-decoration: line-through;
+    color: #6c7289;
+    font-family: var(--Family-Montserrat);
+    font-size: 13px;
+}
+.content .btn {
+    padding: 13px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #146447;
+    color: #fff;
+    cursor: pointer;
+}
+.content .btn:hover {
+    background-color: #3c8067;
+}
+.content .btn .fa-shopping-cart{
+    margin-right: 10px;
+}
